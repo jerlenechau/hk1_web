@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Example Cafe Menu</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+
+        <a id="top"></a>
+
+        <!-- ===== HEADER + NAVIGATION (CSS Box - Layout - Border - Padding - Margin, CSS Position - Menu) ===== -->
+        <header>
+            <h1>Example Cafe Menu</h1>
+        </header>
+
+        <nav class="topnav">
+            <a href="#top" class="home-link"><img src="images/icons8-home-50.png" alt="Trang chủ"></a>
+            <a href="#starter">Starter</a>
+            <a href="#main-courses">Main Courses</a>
+            <a href="#desserts">Desserts</a>
+            <form class="search-form" action="#">
+                <input type="text" name="q" placeholder="Tìm món ăn...">
+                <button type="submit">Go</button>
+            </form>
+        </nav>
+
+        <div class="page">
+
+            <!-- ===== LEFT SIDEBAR: MENU CAFE ===== -->
+            <aside class="side-menu">
+                <ul>
+                    <li><a href="#">Cafe Latte</a></li>
+                    <li><a href="#">Cappuccino</a></li>
+                    <li><a href="#">House Blend</a></li>
+                    <li><a href="#">Iced Coffee</a></li>
+                    <li><a href="#">Italian Roast</a></li>
+                </ul>
+                <img class="side-photo" src="images/company.png" alt="Không gian quán Kith">
+            </aside>
+
+            <!-- ===== MAIN CONTENT ===== -->
+            <main>
+
+                <section id="starter">
+                    <h2>Starter</h2>
+                    <ul class="menu-list">
+                        <li>Chestnut and Mushroom Goujons <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Goat Cheese Salad <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Honey Soy Chicken Kebabs</li>
+                        <li>Seafood Salad</li>
+                    </ul>
+                    <a class="back-top" href="#top">Back to Top</a>
+                </section>
+
+                <section id="main-courses">
+                    <h2>Main Courses</h2>
+                    <ul class="menu-list">
+                        <li>Spinach and Ricotta Roulade <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Beef Tournados with Mustard and Dill Sauce</li>
+                        <li>Roast Chicken Salad</li>
+                        <li>Icelandic Cod with Parsley Sauce</li>
+                        <li>Mushroom Wellington <a href="#veg-note" title="Món chay">(v)</a></li>
+                    </ul>
+                    <a class="back-top" href="#top">Back to Top</a>
+                </section>
+
+                <section id="desserts">
+                    <h2>Desserts</h2>
+                    <ul class="menu-list">
+                        <li>Lemon Sorbet <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Chocolate Mud Pie <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Pecan Pie <a href="#veg-note" title="Món chay">(v)</a></li>
+                        <li>Selection of Fine Cheeses from Around the World</li>
+                    </ul>
+                    <a class="back-top" href="#top">Back to Top</a>
+                    <p id="veg-note" class="veg-note">Items marked with a (v) are suitable for vegetarians.</p>
+                </section>
+
+                <!-- ===== CSS Form: khối thông tin/đặt bàn ===== -->
+                <section id="information">
+                    <h2>Information</h2>
+                    <form class="booking-form" action="#">
+                        <div class="form-row">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <label for="phone">Telephone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-row">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="vn">Việt Nam</option>
+                                <option value="us">USA</option>
+                                <option value="jp">Japan</option>
+                                <option value="other">Khác</option>
+                            </select>
+                            <span class="radio-group">
+                                <label><input type="radio" name="guest-type" value="vn" checked> Vietnamese</label>
+                                <label><input type="radio" name="guest-type" value="foreigner"> Foreigner</label>
+                            </span>
+                        </div>
+                        <div class="form-row">
+                            <label for="comment">Comment</label>
+                            <textarea id="comment" name="comment" rows="4"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+
+            </main>
+
+            <!-- ===== RIGHT SIDEBAR: EVENTS ===== -->
+            <aside class="events">
+                <h2>Events</h2>
+
+                <article class="event">
+                    <h3>Regular Meetings</h3>
+                    <img src="images/meeting.png" alt="Regular Meetings">
+                    <p>Host your regular team meetings or activities in the comfort of your own private room. Charge up
+                        on Kith's aromatic coffee and delectable dishes for that extra boost in your work! <a
+                            href="#">Read more...</a></p>
+                </article>
+
+                <article class="event">
+                    <h3>Product Launches</h3>
+                    <img src="images/launch.png" alt="Product Launches">
+                    <p>Launch your product with ease in a space that truly fits its image. Create an unforgettable
+                        experience for your guests with our spacious outlets! <a href="#">Read more...</a></p>
+                </article>
+
+                <article class="event">
+                    <h3>Company Dinner &amp; Dance</h3>
+                    <img src="images/company.png" alt="Company Dinner and Dance">
+                    <p>Discover your ideal setting for a corporate dinner and dance here at Kith. Make your event a
+                        night to remember at our premium eatery. <a href="#">Read more...</a></p>
+                </article>
+
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>ABC Company &copy; - 12345678 - abccoffee@gmail.com</p>
+        </footer>
+
+    </body>
+
+</html>
